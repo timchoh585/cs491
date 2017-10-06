@@ -40,6 +40,47 @@
       .row.content {height:auto;} 
     }
   </style>
+
+  <style>
+    body {font-family: "Lato", sans-serif;}
+    
+    /* Style the tab */
+    div.tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+    
+    /* Style the buttons inside the tab */
+    div.tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    
+    /* Change background color of buttons on hover */
+    div.tab button:hover {
+        background-color: #ddd;
+    }
+    
+    /* Create an active/current tablink class */
+    div.tab button.active {
+        background-color: #ccc;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -139,7 +180,7 @@
           if I can see a big set of information and be able to work through it whilst the 
           professor is talking about it, it gives me a chance to test myself as well as 
           learn from the professor if I do not understand.  Its different than having to 
-          go from one slide to another because I don't see the whole picture.  If I can see 
+          go from one slide to another because I do not see the whole picture.  If I can see 
           more of what I am learning at once, then I can understand why I am learning 
           something and how it applies.
         </p>
@@ -174,8 +215,8 @@
             not be the best thing.  As you can see, it is not perfect.  It could be because the 
             Korean translate feature is difficult to work with, but to show another example 
             of Google translate: <img src="notanexit-google-translate.png">.  As you can see, 
-            the Korean translate on Google Translate is not really working.  I'm not sure why 
-            it doesn't work, but as you can see, the translate isn't that fluid, or even working.
+            the Korean translate on Google Translate is not really working.  I am not sure why 
+            it does not work, but as you can see, the translate is not that fluid, or even working.
           </p>
           <p style="text-indent :5em;" >    
             Now, I have not tested AR translate within a HoloLens, but I would assume it would 
@@ -204,6 +245,107 @@
               between the two things that are available currently, the experience is quite limited.
           </p>
       </div>
+
+      <h3>Project 1 Review</h3>
+
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Group 3')" id="defaultOpen">Group 3</button>
+        <button class="tablinks" onclick="openCity(event, 'Group 6')">Group 6</button>
+      </div>
+      
+      <div id="Group 3" class="tabcontent">
+        <h3>Group 3</h3>
+          <p style="text-indent :5em;" >
+            This project was a very well made project.  The interactions 
+            with the items are very good and it seems as though almost every object that is able to 
+            be picked up within the VR.  The interaction with some items, like the coffee maker, is 
+            well made and it interacts with the remote quite well.  There is not really a glich that 
+            can happen with the coffee maker, being where you touch it with the remote, but more of 
+            a possible interaction with a standard coffee maker.  It would be really cool if some 
+            physical liquid flowed out of it to show a more realistic version, but that might be too 
+            much to do in the amount of knowledge we have right now.  I also liked their building of 
+            the bathroom.  They used the interactions and sounds well.  The biggest thing about that 
+            was that they knew that their knowledge was limited to being able to interact with objects 
+            with wither a grab or a collider and used their knowledge to be able to use colliders to 
+            interact with the sink and made it motion sensing <img src="sink.png">.  It was unique 
+            from other groups because they addressed the problem that they had, with the current 
+            limitations of controls, and used it to their advantage.
+          </p>
+          <p style="text-indent :5em;" >
+            The ambiance of the room is also very pleasant.  The lighting was nice and full and it 
+            did not feel as though there was actualy false lighting.  The sound that played along with 
+            the room was just as much an ambiant room sound rather than something that seemed out of 
+            place.  The sounds that were activated by triggers were also well placed and seemed as 
+            though they belonged to the object.  As I was saying before, the interactions were well 
+            placed and seemed as though they knew their limitations and they used it well.  
+          </p>
+          <p style="text-indent :5em;" >
+            Some other VR tools that they used well was that they were able to get teleportation to 
+            work with the controls.  Many groups were not able to do that and it made watching their 
+            presentation very nausiating, especially when the presenter would turn around quickly.  
+            The frame rate for this group was a little slow.  I think that this group probably did a 
+            little bit of optimization either with the objects that they were using or by reducing the 
+            size of the current 3D model of the EVL.  Their scaling for objects is also much to scale.  
+            It is visible that the scaling was made to work with the physical representation of the 
+            objects that they have used.  The way that they used the drone <img src="drone.png"> and 
+            provided different physics for the drone because the blades were on.  It's a cool experience 
+            to see that people knew how to change physics and play around with different settings of 
+            tools provided by Unity.
+          </p>
+      </div>
+      
+      <div id="Group 6" class="tabcontent">
+        <h3>Group 6</h3>
+          <p style="text-indent :5em;" >
+            This project was also well made.  There were able to implement many of the same features 
+            as Group 3, being controller interaction with colliders, teleportation, good sound 
+            effects, good lighting, and good ambient sounds.  This group also did a good job on creating 
+            physics for a majority of the objcts that were present.  They made it so most items that 
+            would have physics in the real world, would be portrayed in a similar fashion in the virtual 
+            world.  I think that this team did a good job on interactions of objects and everything seemed 
+            to be of scale to be shown as proper.
+          </p>
+          <p style="text-indent :5em;" >
+            I enjoyed that they were able to do basketball and skee ball.  It's a good use of physics 
+            albeit the skee ball was a little iffy with the colliders.  As stated previously, the had a 
+            good amount of items with physics on them.  Another cool item with physics on them was their 
+            file cabinet.  They were able to play with each individual drawer and put them back accordingly.
+              They also had some weapons with physics on them, which seemed as though they added a heaver 
+            gravity force to it to be realistic in the sense that metal weapons would have a stronger 
+            graviational pull to it because of the mass.  It would have been really cool if they made it 
+            so that things had cloth physics and could be cut up, but based on the time, I'm sure they 
+            could have done that if they had more time.
+          </p>
+          <p style="text-indent :5em;" >
+            Some other things was the adjustable light that they had added.  Providing a different feel for 
+            the interaction of the room.  It's not really realistic, but it was a nice feature to have 
+            regardless.  I also liked how there were targeted areas with their own lights and then there was 
+            the ambient lighting of the room.  There was a lamp that casted proper shadows, obviously using 
+            the added Unity tools, but it was nice to see that they had added the proper tools to their 
+            objects to be able to do that well.  They also have a light on the desk that was a targeted 
+            light.  it was unique because, again, they have targeted lights that work as expected.  They would 
+            focus the lights on the direction of actual travel.
+          </p>
+      </div>
+      
+      <script>
+      function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
